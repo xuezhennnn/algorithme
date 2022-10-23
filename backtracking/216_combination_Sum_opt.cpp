@@ -11,6 +11,7 @@ private:
         }
 
         for(int i =startIndex; i<= 9-(k-path.size())+1; i++){ 
+        //for(int i =startIndex; i<= targetSum-sum; i++){ :如果需要的和很大，那么就会出现程序使用9以外的数字，所以for循环里只有用的数据
             sum += i;
             path.push_back(i);
             
