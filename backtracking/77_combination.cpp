@@ -1,7 +1,9 @@
 class Solution {
 private:
-    vector<vector<int>> result; //存放最后的结果，每个里面有两个元素，所以是二维的
-    vector<int> path; //一维数组 path //存储每一个找到的两个数字的数据
+    vector<vector<int>> result; //存放最后的结果，每个里面有两个元素，所以是二维的，错！
+                                //因为每组数据都是2个以上，是数组，所以数组的集合是二维的
+    
+    vector<int> path;           //存储的是每次找到的那组数据
 
     //n:从1到n k:每一个结果里面有几个元素 startIndex：下一层搜索开始的位置
     void backtracking(int n, int k, int startIndex){
