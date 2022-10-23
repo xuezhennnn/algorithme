@@ -1,0 +1,12 @@
+void backtracking(){
+if(达到终止条件) return;
+
+for(遍历树横向的所有数据){
+
+  执行语句；
+  backtracking(); 递归，竖着一个接一个调用所有数据
+  释放内存空间
+  
+}
+
+}
